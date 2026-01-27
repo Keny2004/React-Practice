@@ -1,23 +1,12 @@
-function MyComponent() {  
-  return (
-    <h1>Hello World</h1>
-  )
-}
-function Test() {
-  return (
-    <h2>hi</h2>
-  )
-}
+import Box from "./component/box";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <MyComponent />
-      <MyComponent />
-      <MyComponent />
-      <Test />
+      <Box />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
