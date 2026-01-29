@@ -8,14 +8,12 @@ function Box() {
     setTodos(newData);
     console.log(todos);
   }
-  const addTodo = (e)=>{
-    //setTodos([...todos,e]);
     console.log(todos);
-  }
+  
   return (
     <div className="box">
       <h1 style={{padding:30}}>待辦事項</h1>
-      <Item hand={handler} setTo={addTodo}/>
+      <Item hand={handler}/>
       {todos.map((todo)=>{
         return <Todo to ={todo}/>
       })}
