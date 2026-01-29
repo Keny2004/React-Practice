@@ -53,4 +53,13 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+.todo>button{
+  border:none;
+  background-color:rgb(255, 0, 0);
+  border-radius: 5px;
+  color: #ffffff;
+  width:50px;
+  height:25px;
+  cursor: pointer;
+}
 
