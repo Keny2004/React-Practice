@@ -36,7 +36,7 @@ padding-left: 10px;
 }
 .form>button{
 border:none;
-background-color:rgb(37, 43, 196);
+background-color:#252bc4;
 border-radius: 5px;
 color: #ffffff;
 width:50px;
@@ -45,7 +45,7 @@ cursor: pointer;
 
 .todo{
 margin-top: 10px;
-background-color:rgb(157, 0, 255);
+background-color:rgb(111, 98, 230);
 border-radius: 8px;
 height:40px;
 padding: 10px;
@@ -53,13 +53,23 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-.todo>button{
+.butt{
+width:80px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.butt>button{
   border:none;
-  background-color:rgb(255, 0, 0);
+  background-color:#4225c4;
   border-radius: 5px;
   color: #ffffff;
-  width:50px;
+  width:40px;
   height:25px;
   cursor: pointer;
+  font-size: 10px;
+  margin-left: 5px;
+ 
 }
 

@@ -10,13 +10,15 @@ function Box() {
     setTodos(newTodos);
   };
   console.log(todos);
-
+  const delTodo = (delData) => {
+    
+  };
   return (
     <div className="box">
       <h1 style={{ padding: 30 }}>待辦事項</h1>
       <Item hand={handler} />
       {todos.map((todo) => {
-        return <Todo to={todo} />;
+        return <Todo to={todo} del={delTodo}/>;
       })}
     </div>
   );
