@@ -11,14 +11,15 @@ function Box() {
   };
   console.log(todos);
   const delTodo = (delData) => {
-    
+    const newTodos = todos.filter((todo) => todo !== delData);//把不是deldata的留下
+    setTodos(newTodos);
   };
   return (
     <div className="box">
       <h1 style={{ padding: 30 }}>待辦事項</h1>
       <Item hand={handler} />
       {todos.map((todo) => {
-        return <Todo to={todo} del={delTodo}/>;
+        return <Todo to={todo} del={delTodo} />;
       })}
     </div>
   );

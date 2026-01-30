@@ -9,9 +9,11 @@ function Item({ hand }) {
   };
   const click = (eee) => {
     eee.preventDefault();
-    console.log("傳送出的文字:", content);
-    hand(content);
-    setContent("");
+    if (content !== "") {
+      console.log("傳送出的文字:", content);
+      hand(content);
+      setContent("");
+    }
   };
   return (
     <form className="form">
